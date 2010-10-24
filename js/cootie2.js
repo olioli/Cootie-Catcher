@@ -15,7 +15,7 @@
   }
   
   function getcootie(){  
-    var searchurl = "http://search.twitter.com/search.json?q=%23cootiecatchr&result_type=mixed&callback=?"
+    var searchurl = "http://search.twitter.com/search.json?q=%23cootiecatchr&result_type=mixed&rpp=25&callback=?"
     $.getJSON( searchurl, showcootie );
   }
   
