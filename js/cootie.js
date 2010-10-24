@@ -76,7 +76,7 @@
   }
   
   function getcootie(){  
-    var searchurl = "http://search.twitter.com/search.json?q=%23cootiecatchr&callback=?"
+    var searchurl = "http://search.twitter.com/search.json?q=cootiecatchr&callback=?"
     $.getJSON( searchurl, showcootie );
   }
 
