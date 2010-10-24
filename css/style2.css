@@ -1,0 +1,48 @@
+/* 6 (0.375), 7 (0.4375), 8 (0.5), 9 (0.5625), 10 (0.625), 11 (0.6875), 12 (0.75), 14 (0.875),
+   16 (1), 18 (1.125), 21 (1.3125), 24 (1.5), 36 (2.25), 48 (3), 60 (3.75), 72 (4.5)  px (em) */
+
+html {
+	background-color: #1A1A1A;
+	text-align: center;
+}
+
+body {
+	color: #fff;
+	font-size: 16px;
+	line-height: 1.5; /* 24px */
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	margin: 48px auto;
+	position: relative;
+	width: 600px;
+	text-rendering: optimizelegibility;
+}
+
+img {
+/*	width: 360px;*/
+	display: inline-block;
+	margin: 1.5em 0;
+}
+
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 24px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+p {
+	color: #ccc;
+}
+
+a {
+	color: #FFCC00;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
