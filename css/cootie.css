@@ -46,6 +46,7 @@ a:hover {
 
 .cootiecatchers {
 	position: relative;
+  cursor: pointer;
 }
 
 p { color: #333; }
