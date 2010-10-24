@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
+
+	<title>Cootie Catchr</title>
+
 	<meta name="keywords" content="">
 	<meta name="description" content="">
 
@@ -11,28 +14,31 @@
 	<link href="css/cootie.css" rel="stylesheet">
 </head>
 <body>
-	<img src="img/cootiecatcher_grey_2.png" class="0">
-	<img src="img/1.png" class="1" style="display:none">
-	<img src="img/2.png" class="2" style="display:none">
-	<img src="img/3.png" class="3" style="display:none">
-	<img src="img/4.png" class="4" style="display:none">
-	
+
+	<p>Click on the cootie catcher</p>
+
+	<div class="cootiecatchers">
+		<img src="img/cootiecatcher_grey_2.png" data-step="0" class="step-0">
+		<img src="img/1.png" data-step="1" class="step-1">
+		<img src="img/2.png" data-step="2" class="step-2">
+		<img src="img/3.png" data-step="3" class="step-3">
+		<img src="img/4.png" data-step="4" class="step-4">
+
+  	<div id="answer">
+  	</div>
+	</div>
+
 	<h1>What would you tell<br>your 9 year old self?</h1>
-	<h2><a href="https://twitter.com/#!/search/cootiecatchr">#cootiecatchr</a></h2>
-		
-	<div id="main">      
-  </div>
-  <div id="answer">
-  </div>
-  	
+	<h2><a href="https://twitter.com/#!/search/%23cootiecatchr">#cootiecatchr</a></h2>
+	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
-	<script src="js/cootie.js"></script>
+	<script src="js/cootie2.js"></script>
 
 	<script>
-		$("img").click(function() {
-			var next = (parseInt($(this).hide().attr("class"))+1)%5;
-			$("."+next).show();
-		})
+	$("img").click(function() {
+		var next = (parseInt($(this).hide().attr("data-step"))+1)%5;
+		$(".step-"+next).show();
+	})
 	</script>
 </body>
 </html>
