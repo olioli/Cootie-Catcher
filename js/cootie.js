@@ -7,13 +7,13 @@
   // First level
   choices.push (
     
-    [ 3, 6, 7, 9 ] );
+    [ 3, 6, 7, 4 ] );
 
   // Second level
   choices.push (
     
     [ 'red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet', 'black' ] );
-  
+
   
   function liTpl( level, label, idx ){
     return $( '<li class="cootielevel' + level + '">'
