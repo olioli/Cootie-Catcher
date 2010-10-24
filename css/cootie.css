@@ -46,6 +46,7 @@ a:hover {
 
 .cootiecatchers {
 	position: relative;
+  cursor: pointer;
 }
 
 p { color: #333; }
@@ -77,3 +78,12 @@ p { color: #333; }
 .step-2 { width: 440px; margin-top: -20px; }
 .step-3 { width: 480px; margin-right: -100px; }
 .step-4 { width: 520px; }
+
+.share-buttons {
+	margin-top: 24px;
+}
+
+.twitter-share-button,
+.facebook-share-button {
+	vertical-align: bottom;
+}
