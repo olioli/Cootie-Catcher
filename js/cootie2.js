@@ -39,7 +39,7 @@
   $(function(){
 
     // Start here.
-    var searchurl = "http://search.twitter.com/search.json?q=%23cootiecatchr&result_type=mixed&rpp=25&callback=?"
+    var searchurl = "http://search.twitter.com/search.json?q=%23cootiecatchr&result_type=mixed&rpp=100&callback=?"
     $.getJSON( searchurl, function(data){ 
       originalCooties = data.results;
       cooties = originalCooties.clone().shuffle();
