@@ -36,13 +36,34 @@ h2 {
 
 p {
 	color: #ccc;
+	color: #333;
+	z-index: 255;
 }
 
 a {
-	color: #FFCC00;
+	color: #ff3300;
 	text-decoration: none;
 }
 
 a:hover {
 	text-decoration: underline;
 }
+
+.on {
+	position: relative;
+}
+
+.top {
+	position: absolute;
+	top: 220px;
+	left: 70px;
+	color: #333;
+}
+
+.step-1, .step-2, .step-3, .step-4 { display: none; }
+
+.step-0 { width: 360px; }
+.step-1 { width: 400px; }
+.step-2 { width: 440px; margin-top: -20px; }
+.step-3 { width: 480px; margin-right: -100px; }
+.step-4 { width: 520px; }
