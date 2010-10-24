@@ -48,7 +48,7 @@
   	$(".cootiecatchers img").click(function() {
   		var next = (parseInt($(this).hide().attr("data-step"))+1)%5;
   		$(".step-"+next).show();
-  	})
+  	});
 	      
     function crunch(idx){ $('#sound'+idx)[0].play(); }
 
