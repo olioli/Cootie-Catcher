@@ -1,38 +1,71 @@
-#cooties {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  padding: 1em;
+/* 6 (0.375), 7 (0.4375), 8 (0.5), 9 (0.5625), 10 (0.625), 11 (0.6875), 12 (0.75), 14 (0.875),
+   16 (1), 18 (1.125), 21 (1.3125), 24 (1.5), 36 (2.25), 48 (3), 60 (3.75), 72 (4.5)  px (em) */
+
+html {
+	background-color: #1A1A1A;
+	text-align: center;
 }
 
-#cooties li {
-  margin: 0;
-  padding: 0;
-  width: 128px;
-  height: 128px;
-  display: inline-block;
-  border: 1px solid #444;
-  margin-right: 1em;
-  color: #fff;
-  text-align: center;
-  font-size: 300%;
+body {
+	color: #ddd;
+	font-size: 16px;
+	line-height: 1.5; /* 24px */
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	margin: 48px auto;
+	position: relative;
+	width: 600px;
+	text-rendering: optimizelegibility;
 }
 
-#cooties li.cootielevel1 {
-
+img {
+/*	width: 360px;*/
+	display: inline-block;
+	margin: 1.5em 0;
 }
 
-#cooties li.cootielevel2 {
-
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 24px;
 }
+
+h2 {
+	font-size: 24px;
+}
+
+a, a:visited, a:active {
+	color: #ff3300;
+	text-decoration: none;
+	font-weight: normal;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.cootiecatchers {
+	position: relative;
+}
+
+p { color: #333; }
 
 #answer {
-  
+	position: absolute;
+	top: 180px;
+	left: 120px;
+	z-index: 255;
+	width: 200px;
+	font-size: 14px;
+	font-weight: bold;
 }
 
-#answer h1 {
-  font-size: 300%;
-}
-#answer h2 {
-  font-size: 100%;
-}
+#answer p { color: #000; }
+
+.step-1, .step-2, .step-3, .step-4 { display: none; }
+
+.step-0 { width: 360px; }
+.step-1 { width: 400px; }
+.step-2 { width: 440px; margin-top: -20px; }
+.step-3 { width: 480px; margin-right: -100px; }
+.step-4 { width: 520px; }
