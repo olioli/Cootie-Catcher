@@ -2,16 +2,20 @@
 
   function showcootie(data){
     if (data && data.results){
-      var random = Math.floor(Math.random() * data.results.length)
-        , cootie = data.results[random];    
-      
-      $("<p>" + cootie.text + "</p>").appendTo ( $("#answer") );
+      var random = Math.floor( Math.random() * data.results.length )
+        , cootie = data.results[random];
+              
+      $( '<p>'
+       + '<a href="http://twitter.com/' + cootie.from_user + '">'
+       + '<img class="avatar" src="' + cootie.profile_image_url + '">'
+       + '</a>'
+       + cootie.text 
+       + '</p>').hide().appendTo( $('#answer') ).fadeIn(125);
     }
   }
-
   
   function getcootie(){  
-    var searchurl = "http://search.twitter.com/search.json?q=%23cootiecatchr&callback=?"
+    var searchurl = "http://search.twitter.com/search.json?q=%23cootiecatchr&result_type=mixed&callback=?"
     $.getJSON( searchurl, showcootie );
   }
   

@@ -52,7 +52,7 @@ p { color: #333; }
 
 #answer {
 	position: absolute;
-	top: 180px;
+	top: 120px;
 	left: 120px;
 	z-index: 255;
 	width: 200px;
@@ -60,7 +60,15 @@ p { color: #333; }
 	font-weight: bold;
 }
 
-#answer p { color: #000; }
+#answer p { color: #000; text-align: center; }
+
+#answer p .avatar {
+  margin: 0 auto 0.75em auto;
+  padding: 0;
+  display: block;
+  height: 48px;
+  width: 48px;
+}
 
 .step-1, .step-2, .step-3, .step-4 { display: none; }
 
